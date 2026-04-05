@@ -1,5 +1,9 @@
 # Local secrets and private data — never commit
 flow_ui/flow_config.json
+.env
+.env.*
+!.env.example
+*.pem
 
 # PyInstaller
 flow_ui/build/
