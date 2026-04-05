@@ -45,40 +45,49 @@ The look is inspired by modern “hold to talk” dictation UIs — dark, minima
 
 ## Screenshots
 
+These use **normalized** images (same background, padding, max width) so the README looks tidy on GitHub. Raw captures are in [`docs/readme/_source/`](docs/readme/_source/); polished files are in [`docs/readme/processed/`](docs/readme/processed/). Rebuild with: `python docs/make_readme_assets.py`.
+
 <p align="center">
-  <img src="docs/readme/01-pill-idle.png" alt="Flow floating pill — Hold to speak, General context" width="520" /><br/>
+  <img src="docs/readme/processed/00-hero-strip.png" alt="Flow — idle, transcribing, pasted" width="900" /><br/>
+  <sub><strong>At a glance</strong> — idle → transcribing → pasted.</sub>
+</p>
+
+### In use
+
+<p align="center">
+  <img src="docs/readme/processed/01-pill-idle.png" alt="Flow floating pill — Hold to speak, General context" width="720" /><br/>
   <sub>Idle — hold your hotkey to speak; context badge shows the current mode (e.g. General).</sub>
 </p>
 
 <p align="center">
-  <img src="docs/readme/02-tray-context-menu.png" alt="Tray menu — Settings, context modes, Quit Flow" width="280" /><br/>
+  <img src="docs/readme/processed/02-tray-context-menu.png" alt="Tray menu — Settings, context modes, Quit Flow" width="360" /><br/>
   <sub>Tray menu — pick a context or open Settings.</sub>
 </p>
 
 <p align="center">
-  <img src="docs/readme/03-transcribing.png" alt="Flow pill showing Transcribing state" width="520" /><br/>
+  <img src="docs/readme/processed/03-transcribing.png" alt="Flow pill showing Transcribing state" width="720" /><br/>
   <sub>While Whisper (or the cloud path) is working.</sub>
 </p>
 
 <p align="center">
-  <img src="docs/readme/04-pasted.png" alt="Flow pill showing Pasted success" width="520" /><br/>
+  <img src="docs/readme/processed/04-pasted.png" alt="Flow pill showing Pasted success" width="720" /><br/>
   <sub>When the text made it into the target app.</sub>
 </p>
 
 ### Settings
 
 <p align="center">
-  <img src="docs/readme/05-settings-general.png" alt="Flow Settings — General: hotkey, Whisper model, startup" width="640" /><br/>
+  <img src="docs/readme/processed/05-settings-general.png" alt="Flow Settings — General: hotkey, Whisper model, startup" width="720" /><br/>
   <sub><strong>General</strong> — recording hotkey, Whisper model (auto or override), launch at startup.</sub>
 </p>
 
 <p align="center">
-  <img src="docs/readme/06-settings-cleanup.png" alt="Flow Settings — Cleanup: AI cleanup, OpenAI vs Ollama, context mode" width="640" /><br/>
+  <img src="docs/readme/processed/06-settings-cleanup.png" alt="Flow Settings — Cleanup: AI cleanup, OpenAI vs Ollama, context mode" width="720" /><br/>
   <sub><strong>Cleanup</strong> — optional AI polish (OpenAI cloud or Ollama local), plus context mode for how aggressive cleanup is.</sub>
 </p>
 
 <p align="center">
-  <img src="docs/readme/07-settings-dictionary.png" alt="Flow Settings — Dictionary: custom word corrections" width="640" /><br/>
+  <img src="docs/readme/processed/07-settings-dictionary.png" alt="Flow Settings — Dictionary: custom word corrections" width="720" /><br/>
   <sub><strong>Dictionary</strong> — map what Whisper “hears” to what you meant (great for names and jargon).</sub>
 </p>
 
@@ -120,7 +129,9 @@ flowchart LR
 | Path | What it’s for |
 |------|----------------|
 | `flow_ui/` | App source (`flow_ui.py`), icon, tests, PyInstaller inputs |
-| `docs/readme/` | Screenshots for this README |
+| `docs/readme/_source/` | Raw screenshot captures (drop new PNGs here, numbered `01-…`–`07-…`) |
+| `docs/readme/processed/` | README images (generated — consistent padding & width) |
+| `docs/make_readme_assets.py` | Regenerates `processed/` from `_source/` |
 | `INSTALL.bat` | Installs Python deps (CPU or CUDA PyTorch if you have an NVIDIA GPU) |
 | `LAUNCH_FLOW.bat` | Run from source |
 | `BUILD.bat` | Build `Flow.exe` and optionally the installer |
