@@ -12,7 +12,7 @@
 #define AppName      "Flow"
 #define AppVersion   "1.0.0"
 #define AppPublisher "Flow"
-#define AppURL       "https://github.com/your-org/flow"
+#define AppURL       "https://github.com/MacButtPro/flow-dictation"
 #define AppExeName   "Flow.exe"
 #define SourceDir    "flow_ui\dist\Flow"
 

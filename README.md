@@ -2,6 +2,9 @@
 
 # Flow
 
+[**Repository on GitHub**](https://github.com/MacButtPro/flow-dictation) · `MacButtPro/flow-dictation`
+
+
 ### Speak anywhere on Windows. Get text where your cursor is.
 
 **Local speech-to-text** with OpenAI Whisper · **Optional AI cleanup** · **Floating overlay** inspired by modern dictation tools
