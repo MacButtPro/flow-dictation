@@ -176,7 +176,7 @@ If `nvidia-smi` works on your machine, the installer script will grab CUDA PyTor
 
 ## License
 
-Add a `LICENSE` file when you’re ready (MIT, GPL, etc.).
+[MIT](LICENSE) — see the `LICENSE` file for the full text.
 
 ---
 
