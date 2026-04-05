@@ -65,6 +65,23 @@ The look is inspired by modern “hold to talk” dictation UIs — dark, minima
   <sub>When the text made it into the target app.</sub>
 </p>
 
+### Settings
+
+<p align="center">
+  <img src="docs/readme/05-settings-general.png" alt="Flow Settings — General: hotkey, Whisper model, startup" width="640" /><br/>
+  <sub><strong>General</strong> — recording hotkey, Whisper model (auto or override), launch at startup.</sub>
+</p>
+
+<p align="center">
+  <img src="docs/readme/06-settings-cleanup.png" alt="Flow Settings — Cleanup: AI cleanup, OpenAI vs Ollama, context mode" width="640" /><br/>
+  <sub><strong>Cleanup</strong> — optional AI polish (OpenAI cloud or Ollama local), plus context mode for how aggressive cleanup is.</sub>
+</p>
+
+<p align="center">
+  <img src="docs/readme/07-settings-dictionary.png" alt="Flow Settings — Dictionary: custom word corrections" width="640" /><br/>
+  <sub><strong>Dictionary</strong> — map what Whisper “hears” to what you meant (great for names and jargon).</sub>
+</p>
+
 ---
 
 ## Features (short list)
