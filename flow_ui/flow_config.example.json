@@ -1,0 +1,13 @@
+{
+  "hotkey": "right alt",
+  "context": "general",
+  "cleanup_enabled": false,
+  "cleanup_engine": "openai",
+  "openai_api_key": "",
+  "openai_model": "gpt-4o-mini",
+  "ollama_model": "llama3.1:8b",
+  "whisper_model_override": "",
+  "launch_at_startup": false,
+  "dictionary": {},
+  "history": []
+}

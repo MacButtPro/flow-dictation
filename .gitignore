@@ -1,0 +1,30 @@
+# Local secrets and private data — never commit
+flow_ui/flow_config.json
+
+# PyInstaller
+flow_ui/build/
+flow_ui/dist/
+flow_ui/*.spec.bak
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+
+# Logs and test output
+flow_ui/flow_log.txt
+flow_ui/build_log.txt
+flow_ui/test_flow_e2e_results.txt
+flow_ui/tmp_user_test.txt
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Releases (upload installers via GitHub Releases, not the repo)
+installer_output/*.exe

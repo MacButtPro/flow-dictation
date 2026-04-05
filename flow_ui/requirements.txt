@@ -1,0 +1,29 @@
+# Flow — Voice Dictation App
+# Install with:  pip install -r requirements.txt
+#
+# For GPU acceleration (NVIDIA), install the CUDA-enabled torch first:
+#   pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+# Then run this file:
+#   pip install -r requirements.txt
+
+# ── Core UI ───────────────────────────────────────────────────────────────────
+PyQt6>=6.4.0
+
+# ── Audio ─────────────────────────────────────────────────────────────────────
+pyaudio>=0.2.13
+
+# ── Clipboard ─────────────────────────────────────────────────────────────────
+pyperclip>=1.8.2
+
+# ── Local Whisper (speech-to-text) ────────────────────────────────────────────
+# Requires torch — install the GPU version above first if you have an NVIDIA GPU.
+openai-whisper>=20231117
+
+# ── OpenAI API (cloud transcription fallback + AI cleanup) ────────────────────
+openai>=1.0.0
+
+# ── Windows COM automation (UIA focus/paste helpers) ──────────────────────────
+comtypes>=1.2.0
+
+# ── Ollama cleanup (optional — only needed if using local LLM cleanup) ─────────
+requests>=2.28.0
